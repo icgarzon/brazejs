@@ -20,7 +20,7 @@ const renderContentBlocks = async function (liquid: Liquid, ctx: Context, fileNa
   const root = ctx.opts.root.slice(0)
   if (root.length === 1) {
     const base = root[0]
-    let roots = ['./content_blocks', '../content_blocks']
+    let roots = ['./content_blocks', '../content_blocks', '../../content_blocks']
     if (customOpts && customOpts.root && customOpts.root.length > 0) {
       roots = _.isString(customOpts.root) ? [customOpts.root] : customOpts.root
     }
